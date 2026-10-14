@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #12131c;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MangaLibraryApp.MainController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #181926; -fx-padding: 20; -fx-spacing: 15;" BorderPane.alignment="CENTER">
+         <children>
+            <Label style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" text="Novelverse 📚" />
+            <Button fx:id="btnLibrary" mnemonicParsing="false" onAction="#handleLibraryAction" style="-fx-background-color: #6c5ce7; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 160; -fx-pref-height: 40;" text="Library 📖" />
+            <Button fx:id="btnDemo" layoutX="30.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleDemoAction" style="-fx-background-color: #252836; -fx-text-fill: #a0a5b5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 160; -fx-pref-height: 40;" text="Try Demo 🎮" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 25; -fx-padding: 30;" BorderPane.alignment="CENTER">
+         <children>
+            <Label style="-fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold;" text="Hello again 👋✨" />
+            <Label layoutX="40.0" layoutY="40.0" style="-fx-text-fill: #8f94a6; -fx-font-size: 14px; -fx-font-weight: bold;" text="Choose what you want to read today 🚀" />
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 20;">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #1d1f2c; -fx-background-radius: 15; -fx-padding: 15; -fx-alignment: center; -fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Users/asljf/Downloads/نسخة%20من%20Horrible/2.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="titleLabel" style="-fx-text-fill: white; -fx-font-weight: bold;" text="Horrible village Ch1 P1" />
+                        <Button fx:id="btnRead1" mnemonicParsing="false" onAction="#handelReadManga1" style="-fx-background-color: #6c5ce7; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20; -fx-pref-width: 120;" text="Read now" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #1d1f2c; -fx-background-radius: 15; -fx-padding: 15; -fx-alignment: center; -fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Users/asljf/Downloads/نسخة%20من%20Horrible/3.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="titleLabel" style="-fx-text-fill: white; -fx-font-weight: bold;" text="Horrible village Ch1 P2" />
+                        <Button fx:id="btnRead2" mnemonicParsing="false" onAction="#handelReadManga2" style="-fx-background-color: #6c5ce7; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20; -fx-pref-width: 120;" text="Read now" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
